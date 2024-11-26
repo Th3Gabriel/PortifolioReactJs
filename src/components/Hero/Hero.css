@@ -1,0 +1,121 @@
+/* Estilos gerais */
+.perfil {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+    border: 3px solid #164773; /* Borda ao redor da imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    animation: pulsar 2s infinite; /* Animação de pulsar */
+    margin-top: 20px;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 0 rgba(22, 71, 115, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(22, 71, 115, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(22, 71, 115, 0);
+    }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre texto e imagem */
+}
+
+.text-container {
+    text-align: left; /* Garante alinhamento à esquerda */
+    flex: 1; /* O texto ocupa o máximo de espaço disponível */
+}
+
+.text-container h2 {
+    font-size: 32px; /* Tamanho do texto */
+    line-height: 1.5; /* Altura da linha */
+    font-weight: 800; /* Peso da fonte */
+    text-align: center; /* Alinha o título à esquerda */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.text-container p {
+    text-align: center; /* Alinha o texto à esquerda */
+    line-height: 1.2; /* Altura da linha */
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Impede que a imagem se expanda */
+}
+
+h2, p {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.primary-bg {
+    background-color: #1a1a1a; /* Fundo escuro */
+    padding: 40px 0; /* Espaçamento no topo e embaixo */
+}
+
+/* Media Queries para responsividade */
+
+/* Telas menores que 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .perfil {
+        width: 300px; /* Reduz tamanho da imagem */
+        height: 300px;
+    }
+
+    .text-container {
+        order: 2; /* Garante que o texto fique abaixo da imagem */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 20px; /* Espaço entre imagem e texto */
+    }
+
+    .text-container h2 {
+        font-size: 24px; /* Reduz o tamanho do texto */
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 16px; /* Ajusta tamanho do parágrafo */
+        text-align: center;
+    }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media screen and (max-width: 480px) {
+    .hero-container {
+        gap: 10px; /* Reduz o espaçamento */
+    }
+
+    .perfil {
+        width: 200px; /* Reduz ainda mais o tamanho da imagem */
+        height: 200px;
+    }
+
+    .text-container {
+        margin-top: 15px; /* Ajusta o espaçamento em telas menores */
+    }
+
+    .text-container h2 {
+        font-size: 20px; /* Reduz mais o tamanho do texto */
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 14px; /* Ajusta para tamanhos menores */
+        text-align: center;
+    }
+}

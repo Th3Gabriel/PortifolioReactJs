@@ -52,6 +52,13 @@ body{
   background-color: var(--color-neutral-dark);
 }
 
+.neutralc-bg{
+  background-color: var(--color-neutral-light);
+}
+
+.neutralc-cl{
+  background-color: var(--color-neutral-light);
+}
 
 .container{
   box-sizing: border-box;
