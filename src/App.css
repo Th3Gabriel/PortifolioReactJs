@@ -1,13 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 
 :root {
-  --color-primary: #164773;
-  --color-secondary: #2A6FA8;
-  --color-tertiary: #A8D4F2;
-  --color-neutral-dark: #292f36;
-  --color-neutral-light: #F2F2F2;
+  /* Cores principais neutras e harmoniosas */
+  --color-primary: #4A4E69; /* Azul acinzentado, transmite confiança e profissionalismo */
+  --color-secondary: #9A8C98; /* Roxo suave, complementa o primário com um tom sofisticado */
+  --color-tertiary: #C9ADA7; /* Rosa claro neutro, proporciona equilíbrio e suavidade */
+  --color-neutral-dark: #22223B; /* Cinza muito escuro, usado para contrastar e destacar */
+  --color-neutral-light: #F2E9E4; /* Off-white, proporciona clareza e limpeza */
 }
 
+/* Cores principais */
+.primary-bg {
+  background-color: var(--color-primary); /* Fundo principal em tom neutro */
+}
+
+.primary-cl {
+  color: var(--color-primary); /* Texto ou elementos em destaque */
+}
+
+.secundary-bg {
+  background-color: var(--color-secondary); /* Fundo ou elementos secundários */
+}
+
+.secundary-cl {
+  color: var(--color-secondary); /* Texto ou ícones complementares */
+}
+
+.terciary-bg {
+  background-color: var(--color-tertiary); /* Fundo suave para detalhes */
+}
+
+.terciary-cl {
+  color: var(--color-tertiary); /* Texto ou elementos com toque refinado */
+}
+
+/* Cores neutras */
+.neutral-bg {
+  background-color: var(--color-neutral-dark); /* Fundo para seções escuras */
+}
+
+.neutral-cl {
+  color: var(--color-neutral-dark); /* Texto escuro em fundos claros */
+}
+
+.neutralc-bg {
+  background-color: var(--color-neutral-light); /* Fundo claro para contraste */
+}
+
+.neutralc-cl {
+  color: var(--color-neutral-light); /* Texto claro em fundos escuros */
+}
 
 body{
   margin: 0;
@@ -16,48 +58,6 @@ body{
   font-weight: 400;
   color: #292f36;
   background-color: #fff;
-}
-
-/* Main Colors */
-
-.primary-bg{
-  background-color: var(--color-primary);
-}
-
-.primary-cl{
-  color: var(--color-primary);
-}
-
-.secundary-bg{
-  background-color: var(--color-secondary);
-}
-
-.secundary-cl{
-  color: var(--color-secondary);
-}
-
-.terciary-bg{
-  background-color: var(--color-tertiary);
-}
-
-.terciary-cl{
-  color: var(--color-tertiary);
-}
-
-.neutral-bg{
-  background-color: var(--color-neutral-dark);
-}
-
-.neutral-cl{
-  background-color: var(--color-neutral-dark);
-}
-
-.neutralc-bg{
-  background-color: var(--color-neutral-light);
-}
-
-.neutralc-cl{
-  background-color: var(--color-neutral-light);
 }
 
 .container{

@@ -20,7 +20,7 @@ function Hero() {
   };
 
   return (
-    <div className="primary-bg">
+    <div className="neutral-bg">
       <div className="container hero-container">
         {/* Conteúdo de Texto */}
         <div className="text-container">

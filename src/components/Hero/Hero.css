@@ -6,7 +6,6 @@
     height: 400px;
     border-radius: 15%; /* Bordas arredondadas */
     object-fit: cover; /* Ajusta a imagem sem distorcer */
-    border: 3px solid #164773; /* Borda */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     animation: pulsar 2s infinite; /* Animação de pulsar */
     margin-top: 20px;
@@ -14,13 +13,13 @@
 
 @keyframes pulsar {
     0% {
-        box-shadow: 0 0 0 0 rgba(22, 71, 115, 0.5);
+        box-shadow: 0 0 0 0 rgba(201, 173, 167, 0.5); /* Baseado no `#C9ADA7` */
     }
     50% {
-        box-shadow: 0 0 20px 10px rgba(22, 71, 115, 0.3);
+        box-shadow: 0 0 20px 10px rgba(201, 173, 167, 0.3); /* Efeito máximo no meio */
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(22, 71, 115, 0);
+        box-shadow: 0 0 0 0 rgba(201, 173, 167, 0); /* Retorno ao estado inicial */
     }
 }
 
@@ -70,15 +69,16 @@
 }
 
 .contactButton {
-    background-color: #2a6fa8;
-    color: #ffffff;
+    background-color: #4A4E69;
+    color: #f2f2f2;
     padding: 16px 24px; /* Tamanho ajustado */
     border-radius: 4px;
+    border: none;
     font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    border: 1px solid #007bff;
     transition: all 0.3s ease;
     margin-top: 50px;
     cursor: pointer;
@@ -97,6 +97,7 @@
     .hero-container {
         flex-direction: column; /* Coloca os elementos em coluna */
         align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Centraliza o texto */
     }
 
     .perfil {
@@ -106,9 +107,7 @@
 
     .text-container {
         order: 2; /* Texto abaixo da imagem */
-        text-align: center; /* Mantém o texto alinhado à esquerda */
         margin-top: 20px;
-
     }
 
     .text-container h2 {
@@ -122,13 +121,16 @@
     .contactButton {
         padding: 12px 20px; /* Ajusta o tamanho */
         font-size: 18px;
-        justify-content: center;
+
     }
 }
 
 /* Tela pequena: até 480px */
 @media screen and (max-width: 480px) {
     .hero-container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Centraliza o texto */
         gap: 10px; /* Reduz o espaço entre elementos */
     }
 
@@ -139,7 +141,6 @@
 
     .text-container {
         margin-top: 15px;
-        text-align: center;
     }
 
     .text-container h2 {
@@ -153,7 +154,5 @@
     .contactButton {
         padding: 10px 16px; /* Ajusta o tamanho para telas menores */
         font-size: 16px;
-        justify-content: center;
-
     }
 }
