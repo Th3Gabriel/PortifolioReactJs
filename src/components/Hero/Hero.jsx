@@ -1,19 +1,13 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// Hero.jsx
 import "./Hero.css";
 import perfil from "../../assets/eu.jpeg";
+import useAOS from "../../Hooks/AOS";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duração das animações (1 segundo)
-      once: true, // Animação ocorre apenas na primeira vez que o elemento entra na viewport
-    });
-  }, []);
+  useAOS( { duration: 2000 });
 
   const calcularIdade = () => {
-    const dataNascimento = "14/07/2002"; // Data de nascimento (DD/MM/YYYY)
+    const dataNascimento = "14/07/2002";
     const [dia, mes, ano] = dataNascimento.split("/").map(Number);
     const nascimento = new Date(ano, mes - 1, dia);
     const hoje = new Date();

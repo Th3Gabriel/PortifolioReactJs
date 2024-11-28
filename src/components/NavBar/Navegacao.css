@@ -1,84 +1,83 @@
 /* Geral */
 header {
-    padding: 10px 0;
-  }
-  
-  header ul, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 0 0 50px;
-    position: relative;
-  }
-  
-  nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #C9ADA7;
-    transition: width 0.3s ease;
-  }
-  
-  nav a:hover::after {
-    width: 100%;
-  }
-  
- 
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-    font-size: 25px;
-    color: #fff;
-    background: none;
-    border: none;
-    outline: none;
-  }
-  
-  /* Responsividade */
-  @media screen and (max-width: 768px) {
-    nav {
-      display: none; 
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      background: #292f36;
-      padding: 10px;
-      width: 100%;
-      height: auto;
-      z-index: 1;
-    }
-  
-    nav.show {
-      display: flex; 
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 15px;
-    }
+  padding: 10px 0;
+}
 
-    .mobile-menu {
-      display: block; 
-    }
+header ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+nav a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 0 0 50px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c9ada7;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #292f36;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
   }
-  
+
+  nav.show {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
