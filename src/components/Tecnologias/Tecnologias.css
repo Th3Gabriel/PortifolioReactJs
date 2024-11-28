@@ -1,0 +1,24 @@
+.Icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Espaçamento entre os ícones */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.Icons > * {
+  transition: transform 0.2s, filter 0.2s; /* Efeito suave de destaque */
+}
+
+.Icons > *:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+  filter: brightness(1.5); /* Deixa o ícone mais brilhante */
+}
+
+.label {
+  text-align: center;
+  font-weight: 600;
+  color: #f2f2f2;
+  padding: 5px;
+}

@@ -1,6 +1,7 @@
 import './App.css'
 import Header from '../src/components/NavBar/Navegacao'
 import Hero from '../src/components/Hero/Hero'
+import Tecnologias from './components/Tecnologias/Tecnologias'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Tecnologias />
       <h1>Gabriel Portifolio em Desenvolvimento</h1>
     </>
   )
